@@ -6,13 +6,10 @@ import (
 	"encoding/binary"
 )
 
-func BigEndian() bool {
-	return false
-}
-
-func LittleEndian() bool {
-	return true
-}
+const (
+	Little_Endian = true
+	Big_Endian    = false
+)
 
 func ByteOrder() binary.ByteOrder {
 	return binary.LittleEndian
